@@ -1,0 +1,60 @@
+.like-likes {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.likes {
+  text-align: center;
+}
+
+.likes-top {
+  h2 {
+    margin: 0 auto;
+  }
+}
+
+.likes-div {
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  p {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .likes-top {
+    width: 60%;
+  }
+
+  .modal-likes {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .likes-div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .likes-top {
+    width: 40%;
+  }
+
+  .modal-likes {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .likes-div {
+    width: 40%;
+  }
+}

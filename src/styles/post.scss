@@ -1,0 +1,259 @@
+.upload-container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 200px;
+  img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.post-top {
+  display: flex;
+  gap: 80px;
+  padding: 10px;
+  border: 1px solid black;
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.post-no-user {
+  width: 30px;
+  height: 30px;
+}
+
+.post-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.post {
+  transition: 0.2s ease-in-out;
+}
+
+.post:hover {
+  transform: scale(1.1);
+}
+
+.likes-comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 440px) {
+  .upload-container {
+    width: 100%;
+    height: 100%;
+
+    .upload-content {
+      width: 300px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    .post-top {
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .post-middle {
+      img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .upload-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+
+    .upload-content {
+      width: 330px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    .post-top {
+      align-items: center;
+    }
+
+    .post-middle {
+      img {
+        width: 330px;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .upload-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+
+    .upload-content {
+      width: 530px;
+      border-radius: 5px;
+      margin-bottom: 60px;
+    }
+
+    .post-top {
+      padding: 10px;
+    }
+
+    .bottom-icon {
+      font-size: 15px;
+    }
+
+    .count {
+      font-size: 15px;
+    }
+
+    .post-middle {
+      img {
+        width: 530px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .upload-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+
+    .upload-content {
+      width: 530px;
+      border-radius: 5px;
+    }
+
+    .post-top {
+      display: flex;
+      align-items: center;
+    }
+
+    .post-middle {
+      img {
+        width: 530px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .upload-container {
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+
+    .upload-content {
+      width: 530px;
+      height: 300px;
+      margin-bottom: 100px;
+    }
+
+    .post-top {
+      display: flex;
+      align-items: center;
+    }
+
+    .bottom-icon {
+      font-size: 15px;
+    }
+
+    .count {
+      font-size: 15px;
+    }
+
+    .post-bottom {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .post-middle {
+      img {
+        width: 530px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .upload-container {
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+
+    .upload-content {
+      width: 250px;
+      height: 100px;
+      margin-bottom: 150px;
+    }
+
+    .post-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      h4 {
+        padding: 2px;
+      }
+    }
+
+    .bottom-icon {
+      font-size: 15px;
+    }
+
+    .count {
+      font-size: 15px;
+    }
+
+    .post-bottom {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .post-middle {
+      width: 100%;
+      height: 150px;
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+  }
+}

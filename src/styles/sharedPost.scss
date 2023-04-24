@@ -1,0 +1,56 @@
+.shares-container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 100px 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.no-posts {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.shares-div {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+
+  img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.shared-post-overlay {
+  width: 500px;
+  height: 400px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 20%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+
+  h1 {
+    color: white;
+  }
+}
+
+.shared-post-overlay:hover {
+  opacity: 0.75;
+}
+
+.trash {
+  color: #fff;
+  cursor: pointer;
+}

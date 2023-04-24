@@ -1,0 +1,51 @@
+.shares {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.shares-image {
+  text-align: center;
+  padding: 40px 30px;
+  img {
+    width: 300px;
+  }
+}
+
+.users {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.user {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(212, 212, 212);
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.user:hover {
+  background-color: grey;
+}
+
+.share-btn {
+  text-align: center;
+  padding: 30px;
+
+  button {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #414083;
+    color: white;
+  }
+}

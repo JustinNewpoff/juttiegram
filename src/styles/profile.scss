@@ -1,0 +1,107 @@
+.profile-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  margin-top: 20px;
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid black;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+}
+
+.profile-top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.change-photo-overlay {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.637);
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.change-photo-overlay:hover {
+  opacity: 1;
+}
+
+.profile-camera {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.profile-post {
+  width: 250px;
+  height: 150px;
+  cursor: pointer;
+  position: relative;
+
+  img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+.profile-post-overlay {
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-post-overlay:hover {
+  opacity: 0.7;
+}
+
+.trash {
+  font-size: 30px;
+}
+
+.profile-heading {
+  text-align: center;
+}
+
+.profile-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 20px;
+}
